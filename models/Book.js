@@ -22,6 +22,11 @@ const bookSchema = new Schema({
   available: {
     type: Boolean,
   },
+  data: {
+    type: Date,
+    default: Date.now,
+  }
+  }
 });
 
 module.exports = mongoose.model("Book", bookSchema);
